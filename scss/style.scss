@@ -1,0 +1,46 @@
+$graphColor: purple;
+$tooltipBackground: steelblue;
+
+body {
+	position: relative;
+	background-color: #666;
+}
+
+.container {
+	width: 1200px;
+	margin: 100px auto;
+	background-color: white;
+	border: 1px solid black;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#graph {
+	width: 100%;
+/* 	border: 1px dotted black; */
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+#tooltip {
+	width: 80px;
+	border: 1px solid black;
+	z-index: 10;
+	position: absolute;
+	background-color: $tooltipBackground;
+	border-radius: 5px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	padding: 10px;
+}
+
+rect {
+	fill: $graphColor;
+}
